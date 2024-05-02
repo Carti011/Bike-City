@@ -354,11 +354,10 @@ opacity: 1;
 
 .social-icon i{
     color: #000000;
+    font-size: 25px;
     align-items: center;
     position: center;
     text-align: center;
-    margin-right: 10px;
-    font-size: 20px;
     transition: all .42s;
 
 }
