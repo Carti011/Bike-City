@@ -74,3 +74,97 @@ nav {
     cursor: pointer;
     border: none;
 }
+
+
+
+
+
+
+
+/* Estilizando  Primeira sessao da minha home */
+
+section {
+    padding: 5% 10%;
+}
+
+/* Estilo específico para a seção principal */
+.main-home {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo do texto dentro da seção principal */
+.main-texto {
+    max-width: 50%; /* Limita a largura do texto a 50% da tela */
+    padding-right: 20px; /* Adiciona um espaço à direita do texto */
+}
+
+.main-texto h5 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main-texto h1 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-texto p {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: #074EEB;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #fff;
+    color: #074EEB;
+}
+
+/* Estilo da imagem dentro da seção principal */
+.main-imagem {
+    flex: 1; /* Ocupa o espaço restante */
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+}
+
+.main-imagem img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto;
+}
+
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 85%;
+}
+.down i{
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+.down i:hover{
+    background-color: #074EEB;
+    color: #fff;
+    transition: all .42 ease;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0 / 10%);
+}
