@@ -253,3 +253,36 @@ header.sticky{
     font-size: 14px;
     font-weight: 600;
 }
+
+
+
+/* Estilizando o slide show */
+
+.slideshow-container{
+    width: 100%;
+    height: 100%; /* Define a altura total da tela */
+    overflow: hidden;
+    align-items: center;
+    position: center;
+}
+
+.slide{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o contêiner, mantendo a proporção */
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+from{
+opacity: 0.4;
+}
+to{
+opacity: 1;
+}
+}
