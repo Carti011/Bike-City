@@ -7,6 +7,17 @@
     font-family: "Montserrat", sans-serif;
 }
 
+#main{
+    max-width: 1280;
+    margin: 0 auto;
+}
+
+.contact{
+    max-width: 1280;
+    margin: 0 auto;
+}
+
+
 nav {
     background-color: #074EEB;
     padding: 10px;
@@ -355,6 +366,8 @@ opacity: 1;
     padding-top: 1px;
     padding-bottom: 1px;
     text-align: center;
+    max-width: 1280;
+    margin: 0;
 }
 
 .end-text p{
