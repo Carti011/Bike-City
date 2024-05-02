@@ -136,13 +136,14 @@ section {
     color: #000000;
     padding: 10px 20px;
     border-radius: 5px;
+    border: 1px solid #ffffff; /* Adicionando a borda branca */
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .main-btn:hover {
-    background-color: #fff;
-    color: #074EEB;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Estilo da imagem dentro da seção principal */
