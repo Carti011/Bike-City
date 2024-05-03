@@ -38,7 +38,7 @@ nav {
 
 /* Estilo do campo de busca */
 .input-nav input[type="text"] {
-    padding: 10px 35px; /* Aumenta o padding para esticar o campo */
+    padding: 10px 60px; /* Aumenta o padding para esticar o campo */
     border-radius: 15px; /* Reduz o border-radius para torná-lo mais retangular */
     border: none;
     margin-right: 30%;
@@ -195,6 +195,7 @@ header.sticky{
 
 .center-text h2{
     color: #111;
+
     font-size: 28px;
     text-transform: capitalize;
     text-align: center;
@@ -203,6 +204,11 @@ header.sticky{
 
 .center-text span{
     color: #074EEB;
+    text-shadow: 
+    -1px -1px 0 #FFF,  
+     1px -1px 0 #FFF,
+    -1px  1px 0 #FFF,
+     1px  1px 0 #FFF;
 }
 
 
