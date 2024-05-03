@@ -22,7 +22,7 @@ nav {
     background-color: #074EEB;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -41,8 +41,7 @@ nav {
     padding: 10px 35px; /* Aumenta o padding para esticar o campo */
     border-radius: 15px; /* Reduz o border-radius para torná-lo mais retangular */
     border: none;
-    margin-right: auto; /* Centraliza o campo */
-    margin-left: auto; /* Centraliza o campo */
+    margin-right: 30%;
     width: 100%; /* Define a largura do campo */
 }
 
@@ -58,6 +57,7 @@ nav {
 }
 
 .menu ul li {
+    margin-left: 30px;
     margin-right: 10px;
 }
 
