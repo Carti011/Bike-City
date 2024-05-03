@@ -51,17 +51,17 @@ nav {
     flex: 2;
 }
 
-.manu ul {
+.menu ul {
     list-style: none;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
 }
 
-.manu ul li {
+.menu ul li {
     margin-right: 10px;
 }
 
-.manu ul li a {
+.menu ul li a {
     color: #ffffff;
     text-decoration: none;
     padding: 5px 10px;
@@ -69,7 +69,7 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.manu ul li a:hover {
+.menu ul li a:hover {
     background-color: #ffffff;
     color: #074EEB;
 }
