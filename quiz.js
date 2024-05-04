@@ -49,7 +49,7 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
     let recomendacoesBtn = document.createElement("button");
     recomendacoesBtn.innerText = "Nossas Recomendações";
     recomendacoesBtn.classList.add("botao");
-    recomendacoesBtn.style.marginLeft = "10px"; // Adicionando margem à esquerda
+    recomendacoesBtn.style.marginLeft = "30px"; // Adicionando margem à esquerda
     recomendacoesBtn.addEventListener("click", function() {
         // Redirecionar para index.html na seção trending
         window.location.href = "index.html#trending";
