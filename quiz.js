@@ -1,28 +1,58 @@
-// TUDO SOBRE O QUIZ  
-//declarando variaveis
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+    
+    // Obter os valores dos campos do formulário
+    let nome = document.getElementById("nome").value;
+    let tipoTerreno = document.getElementById("terreno").value;
+    let distânciaPretendida = document.getElementById("distancia").value;
+    let experiênciaCiclismo = document.getElementById("experiencia").value;
+    let orçamento = document.getElementById("orcamento").value;
+    let preferênciaMarchas = document.getElementById("marchas").value;
+    let tamanhoQuadro = document.getElementById("altura").value;
+    let preferênciaMarca = document.getElementById("marca").value;
+    let estiloPedalada = document.getElementById("estilo").value;
+    let corPreferida = document.getElementById("cor").value;
 
-// Declarando variáveis
-let nome = prompt("Qual é o seu nome?");
-let tipoTerreno = prompt("Em que tipo de terreno você pretende andar de bicicleta? (por exemplo: estrada, trilha, cidade)");
-let distânciaPretendida = prompt("Qual é a distância média que você planeja percorrer em cada passeio de bicicleta?");
-let experiênciaCiclismo = prompt("Qual é o seu nível de experiência em ciclismo? (por exemplo: iniciante, intermediário, avançado)");
-let orçamento = prompt("Qual é o seu orçamento para comprar uma bicicleta?");
-let preferênciaMarchas = prompt("Você prefere uma bicicleta com muitas marchas para várias opções de velocidade ou uma bicicleta de marcha única mais simples?");
-let tamanhoQuadro = prompt("Qual é a sua altura? (para ajudar a determinar o tamanho ideal do quadro)");
-let preferênciaMarca = prompt("Você tem alguma preferência por uma marca específica de bicicleta?");
-let estiloPedalada = prompt("Qual é o seu estilo de pedalada? (por exemplo: casual, competitivo, lazer)");
-let corPreferida = prompt("Qual cor você prefere para sua bicicleta?");
+    // Esconder o formulário
+    document.getElementById("quiz-form").style.display = "none";
 
-let msg = document.getElementById("msg");
+    // Exibir as mensagens na página
+    let msg = document.getElementById("msg");
+    msg.innerHTML = `<p>Olá ${nome}, obrigado por responder ao nosso quiz!</p>`;
+    msg.innerHTML += `<p>Com base nas suas respostas, recomendamos uma bicicleta para ${tipoTerreno}.</p>`;
+    msg.innerHTML += `<p>Com uma distância média de ${distânciaPretendida} por passeio.</p>`; 
+    msg.innerHTML += `<p>Como você é um ciclista ${experiênciaCiclismo}, sugerimos uma bicicleta de ${preferênciaMarchas}.</p>`;
+    msg.innerHTML += `<p>Com o quadro para uma pessoa de ${tamanhoQuadro}</p>`;
+    msg.innerHTML += `<p>E que se encaixe dentro do seu orçamento de ${orçamento}.</p>`;
+    msg.innerHTML += `<p>Sua preferência de marca é ${preferênciaMarca}, e sua cor preferida é ${corPreferida}.</p>`;
+    msg.innerHTML += `<p>Esperamos que você encontre a bicicleta perfeita para suas necessidades!</p>`;
 
-// Concatenando todas as mensagens em uma única string
-msg.innerHTML = `Olá ${nome}, obrigado por responder ao nosso quiz!<br>`;
-msg.innerHTML += `Com base nas suas respostas, recomendamos uma bicicleta para ${tipoTerreno}.<br>`;
-msg.innerHTML += `Com uma distância média de ${distânciaPretendida} por passeio.<br>`; 
-msg.innerHTML += `Como você é um ciclista ${experiênciaCiclismo}, sugerimos uma bicicleta de ${preferênciaMarchas} Qtd(Marchas)<br>`;
-msg.innerHTML += `Com um quadro para uma pessoa de ${tamanhoQuadro}<br>`;
-msg.innerHTML += `E que se encaixe dentro do seu orçamento de ${orçamento}.<br>`;
-msg.innerHTML += `Sua preferência de marca é ${preferênciaMarca}, e sua cor preferida é ${corPreferida}.<br>`;
-msg.innerHTML += `Esperamos que você encontre a bicicleta perfeita para suas necessidades!`;
+    // Adicionar tabela com respostas (como exemplo)
+    let tabelaRespostas = document.createElement("table");
+    tabelaRespostas.id = "tabela-respostas";
+    // Aqui você pode adicionar as linhas e colunas da tabela com as respostas do quiz
+    msg.appendChild(tabelaRespostas);
 
+    // Adicionar botão para editar respostas
+    let editarBtn = document.createElement("button");
+    editarBtn.innerText = "Editar Respostas";
+    editarBtn.classList.add("botao");
+    editarBtn.addEventListener("click", function() {
+        // Mostrar o formulário novamente
+        document.getElementById("quiz-form").style.display = "block";
+        // Esconder a mensagem
+        msg.innerHTML = "";
+    });
+    msg.appendChild(editarBtn);
 
+    // Adicionar botão para ir para index.html na seção trending
+    let recomendacoesBtn = document.createElement("button");
+    recomendacoesBtn.innerText = "Nossas Recomendações";
+    recomendacoesBtn.classList.add("botao");
+    recomendacoesBtn.style.marginLeft = "10px"; // Adicionando margem à esquerda
+    recomendacoesBtn.addEventListener("click", function() {
+        // Redirecionar para index.html na seção trending
+        window.location.href = "index.html#trending";
+    });
+    msg.appendChild(recomendacoesBtn);
+});
