@@ -1,25 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/quiz.css">
-    <title>Quiz </title>
+    <title>Quiz de Bicicletas</title>
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
+    <div class="container">
+        <h1 class="titulo">Quiz de Bicicletas</h1>
+        <form id="quiz-form">
+            <label for="nome" class="label">Qual é o seu nome?</label>
+            <input type="text" id="nome" name="nome" class="input">
+
+            <div class="div-terreno">
+                <label for="terreno" class="label label-terreno">Em que tipo de terreno você pretende andar de bicicleta?</label><br>
+                <span class="exemplo">(por exemplo: estrada, trilha, cidade)</span>
+                <input type="text" id="terreno" name="terreno" class="input"> 
+            </div>                       
     
-    <h1>Perguntas e Respostas </h1>
-    <p id="msg"></p>
+            <label for="distancia" class="label">Qual é a distância média que você planeja percorrer em cada passeio de bicicleta?</label>
+            <input type="text" id="distancia" name="distancia" class="input">
+            
+            <div class="div-experiencia">
+                <label for="experiencia" class="label">Qual é o seu nível de experiência em ciclismo?</label><br>
+                <span class="exemplo">(por exemplo: iniciante, intermediário, avançado)</span>
+                <input type="text" id="experiencia" name="experiencia" class="input">
+            </div>
+    
+            <label for="orcamento" class="label">Qual é o seu orçamento para comprar uma bicicleta?</label>
+            <input type="text" id="orcamento" name="orcamento" class="input">
+            
+            <div class="div-marchas">
+                <label for="marchas" class="label">Você prefere uma bicicleta com muitas marchas ou uma bicicleta de marcha única?</label><br>
+                <span class="exemplo">(por exemplo: muitas marchas, marcha unica)</span>
+                <input type="text" id="marchas" name="marchas" class="input">
+            </div>
 
+            <div class="div-altura">
+                <label for="altura" class="label">Qual é a sua altura? (para ajudar a determinar o tamanho ideal do quadro)</label><br>
+                <span class="exemplo">(por exemplo: 1,70 ou 170cm)</span>
+                <input type="text" id="altura" name="altura" class="input">
+            </div>
 
+            <div class="div-marca">
+                <label for="marca" class="label">Você tem alguma preferência por uma marca específica de bicicleta?</label><br>
+                <span class="exemplo">(por exemplo: Nao ou S/sim. Qual?)</span>
+                <input type="text" id="marca" name="marca" class="input">
+            </div>
 
+            <div class="div-estilo">
+                <label for="estilo" class="label">Qual é o seu estilo de pedalada?</label><br>
+                <span class="exemplo">(por exemplo: casual, competitivo, lazer)</span>
+                <input type="text" id="estilo" name="estilo" class="input">
+            </div>
 
+            <label for="cor" class="label">Qual cor você prefere para sua bicicleta?</label>
+            <input type="text" id="cor" name="cor" class="input">
+    
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+        <p id="msg" class="mensagem"></p>
+    </div>
 
-
-
-
-
-
-    <script src="/quiz.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
